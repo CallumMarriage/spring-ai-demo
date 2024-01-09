@@ -1,6 +1,5 @@
-package com.callum.ai.service;
+package com.spring.ai.demo;
 
-import com.callum.ai.ErrorPrompt;
 import com.theokanning.openai.OpenAiHttpException;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.ai.client.AiClient;

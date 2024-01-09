@@ -1,7 +1,5 @@
-package com.callum.ai.web;
+package com.spring.ai.demo;
 
-import com.callum.ai.service.AIErrorHandler;
-import com.callum.ai.ErrorPrompt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
