@@ -1,6 +1,7 @@
 package com.callum.ai.web;
 
 import com.callum.ai.service.AIErrorHandler;
+import com.callum.ai.ErrorPrompt;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,7 +15,12 @@ public class AIErrorController {
     }
 
     @GetMapping("/error/summary")
-    public String getErrorSummary() {
+    public ErrorPrompt getErrorSummary() {
         return aiErrorHandler.returnPrettyErrorMessage();
+    }
+
+    @GetMapping("/error/summary/simple")
+    public String getErrorSummarySimple() {
+        return aiErrorHandler.returnPrettyErrorMessageSimple();
     }
 }
